@@ -6,7 +6,8 @@
 
 @layer base {
     :root {
-        --root-font-size: 15px;        
+        --root-font-size: 15px;  
+        overflow-x: hidden;      
     };
  
     html {
@@ -192,12 +193,7 @@
       left: 32%;
     }
 
-
     
-
-    /* .heading-3 {
-      font-size: 35px;
-    } */
 
 }
 

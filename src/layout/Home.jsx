@@ -21,7 +21,7 @@ const Home = () => {
 
 
   return (
-    <>
+    <div className=''>
         <nav className="flex items-center">      
             <ul className='border-r h-24 w-full flex justify-around border text-lg font-semibold text-red-500 flex-row items-center z-50 bg-white'>
                 <li className='h-full w-full flex justify-center items-center border-r hover:bg-gray-200 ease-in duration-300'><img className='w-24' src={brandLogo} alt="" /></li>
@@ -38,9 +38,8 @@ const Home = () => {
             
             {/* Section 1 */}
             <section className='section flex relative inset-0 bg-fp bg-cover bg-double-center'>
-                <div className='w-full min-h-full flex flex-col items-center justify-center px-0 pt-52 pb-56'>
-                    <div className='container'>
-                    </div>
+                <div className='w-full min-h-full flex flex-col items-center justify-center px-0 pt-64 pb-64'>
+                    <div className='container'></div>
                 </div>            
             </section>
             {/* The END */}
@@ -72,7 +71,7 @@ const Home = () => {
                                     <span className='block w-max'>click to check your gift card</span>
                                 </Link>
                             </div>
-                            <div>
+                            <div className='mt-10'>
                                 <Link className='button button-default' to='/my-cards'>
                                     <span className='fas fa-book'> Check Gift Card</span>
                                 </Link>
@@ -82,19 +81,19 @@ const Home = () => {
                 </div>
                 <div className='image-container'>
                     <div className='mock-up-1'>
-                        <div className='object object-1'>
+                        <div className='object object-1 bg-white shadow-2xl px-2 py-2 rounded-lg z-10'>
                             <img src={amazon} alt="first object" />
                         </div>
-                        <div className='object object-2 bg-white shadow-2xl'>
+                        <div className='object object-2 bg-white shadow-2xl rounded-lg z-20'>
                             <img src={googlePlay} alt="second object" />
                         </div>
-                        <div className='object object-3'>
-                            <img src={itunes} alt="third object" />
+                        <div className='object object-3 bg-white shadow-2xl px-2 py-2 rounded-lg z-20'>
+                            <img src={itunes} alt="third object" className='w-full' />
                         </div>
-                        <div className='object object-4'>
-                            <img src={itunez} alt="fourth object" />
+                        <div className='object object-4 z-20'>
+                            <img src={itunez} alt="fourth object" className='' />
                         </div>
-                        <div className='object object-5'>
+                        <div className='object object-5 bg-white shadow-2xl rounded-lg z-20'>
                             <img src={steam} alt="fifth object" />
                         </div>
                     </div>
@@ -106,7 +105,7 @@ const Home = () => {
 
 
         </main>
-    </>
+    </div>
   )
 }
 
