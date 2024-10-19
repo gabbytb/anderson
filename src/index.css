@@ -1,0 +1,209 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    :root {
+        --root-font-size: 15px;        
+    };
+ 
+    html {
+        font-size: var(--root-font-size);
+        font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;   
+        line-height: 1.66667;
+        font-weight: 300;
+        letter-spacing: 0.01em;
+        color: rgba(0, 0, 0, 0.75);
+        background-color: #ffffff;
+        -webkit-text-size-adjust: none;
+        -webkit-font-smoothing: subpixel-antialiased;
+    }
+
+    .container {
+      max-width: 1200px;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+
+    p {
+      font-size: var(--root-font-size);
+      font-weight: 300;
+      line-height: 1.8;
+    }
+
+    h3 {
+      font-size: 35px;
+    }
+}
+
+
+
+@layer components {
+
+    .container-lined {
+        @apply
+            flex
+            relative
+            top-0      
+            h-full            
+        ;
+    };
+
+    .section-lined:before, .section-lined:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      border-left: 1px solid #000000;
+      border-right: 1px solid #000000;
+    }
+
+    .arrow_container {
+      position: relative;
+      width: 24px;
+      height: 24px;
+      margin: 0px auto;
+    }
+
+    .chevron {
+      position: absolute;
+      width: 28px;
+      height: 8px;
+      opacity: 0;
+      transform: scale3d(0.5, 0.5, 0.5);
+      animation: move 3s ease-out infinite;
+      margin: -10px -125px;
+      background: indigo;
+      color: indigo;
+      border: indigo;
+    }
+
+    .chevron:first-child {
+      animation: move 3s ease-out 1s infinite;
+    }
+    
+    .chevron:nth-child(2) {
+      animation: move 3s ease-out 2s infinite;
+    }
+
+
+
+    .chevron::before, .chevron::after {
+      content: ' ';
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 51%;
+      background: #fff;
+    }
+
+    .chevron::before {
+      left: 0;
+      transform: skew(0deg, 30deg);
+    }
+
+    .chevron::after {
+      right: 0;
+      width: 50%;
+      transform: skew(0deg, -30deg);
+    }
+
+    .button {
+      position: relative;
+      overflow: hidden;
+      display: inline-block;
+      padding: 12px 24px;
+      font-size: 15px;
+      line-height: 1.25;
+      font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      text-align: center;
+      cursor: pointer;
+      vertical-align: middle;
+      user-select: none;
+      transition: 250ms all ease-in-out;
+      background-color: red;
+      border-color: blue;
+      color: white;
+      border: none;
+      border-left: 5px solid #5f5cde;
+    }
+
+    .image-section .image-container {
+      position: absolute;
+      right: 0;
+      top: 0;
+      left: 57%;
+      bottom: 0;
+      max-width: 850px;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .mock-up-1 {
+      position: relative;
+      width: 100%;
+      padding-top: 82%;
+    }
+
+    .mock-up-1 .object {
+      position: absolute;
+      width: 50%;
+    }
+
+    .mock-up-1 .object-1 {
+      top: 17%;
+      left: 22%;
+    }
+
+    .mock-up-1 .object-2 {
+      top: 0;
+      left: 54%;
+    }
+
+    .mock-up-1 .object-3 {
+      top: 38%;
+      left: 6%;
+    }
+
+    .mock-up-1 .object-4 {
+      top: 24%;
+      left: 75%;
+      width: 26%;
+    }
+
+    .mock-up-1 .object-5 {
+      top: 68%;
+      left: 32%;
+    }
+
+
+    
+
+    /* .heading-3 {
+      font-size: 35px;
+    } */
+
+}
+
+
+
+
+/* @layer utilities {
+
+} */
