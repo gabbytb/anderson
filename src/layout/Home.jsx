@@ -24,11 +24,19 @@ const Home = () => {
     <div className=''>
         <nav className="flex items-center">      
             <ul className='border-r h-24 w-full flex justify-around border text-lg font-semibold text-red-500 flex-row items-center z-50 bg-white'>
-                <li className='h-full w-full flex justify-center items-center border-r hover:bg-gray-200 ease-in duration-300'><img className='w-24' src={brandLogo} alt="" /></li>
-                <li className='h-full w-full flex justify-center items-center border-r hover:bg-gray-200 ease-in duration-300 capitalize'>home</li>
-                <li className='h-full w-full flex justify-center items-center border-r hover:bg-gray-200 ease-in duration-300 capitalize'>my cards</li>
-                <li className='h-full w-full flex justify-center items-center border-r hover:bg-gray-200 ease-in duration-300 capitalize'>buy cards</li>
-                <li className='h-full w-full flex justify-center items-center hover:bg-gray-200 ease-in duration-300 capitalize'>contact us</li>
+                <li className='h-full flex justify-center items-center border-r hover:bg-white ease-in duration-300 w-165'><img className='w-28 h-14' src={brandLogo} alt="" /></li>
+                <li className='h-full w-full flex justify-center items-center border-r hover:bg-gray-200 ease-in duration-300 capitalize'>
+                    <Link to='/' className='py-8 px-8'>home</Link>
+                </li>
+                <li className='h-full w-full flex justify-center items-center border-r hover:bg-gray-200 ease-in duration-300 capitalize'>
+                    <Link to='/my-cards' className='py-8 px-8'>my cards</Link>
+                </li>
+                <li className='h-full w-full flex justify-center items-center border-r hover:bg-gray-200 ease-in duration-300 capitalize'>
+                    <Link to='/buy-cards' className='py-8 px-8'>buy cards</Link>
+                </li>
+                <li className='h-full w-full flex justify-center items-center hover:bg-gray-200 ease-in duration-300 capitalize'>        
+                    <Link to='/contact-us' className='py-8 px-8'>contact us</Link>
+                </li>
             </ul>
         </nav>
 
@@ -58,7 +66,7 @@ const Home = () => {
                 <div className='container'>
                     <div className='flex justify-start w-full row mx-0'>
                         <div className='flex-55 max-w-9xl px-[15px] text-start'>
-                            <h3 className='capitalize font-normal'>about us</h3>
+                            <h3 className='capitalize font-light'>about us</h3>
                             <div className='mt-4'>Check and validate any of your gift cards with just one click of a button</div>
                             <p className='mt-12 text-base'>Verify gift cards online is a leading gift card checking and validation service provider with a repuation for providing fast and accurate gift card validation service to all of its users. Just proceed to the validation page, Upload the front and back of your giftcard and our system will automatically review its validation and activation</p>
                             <br />
@@ -103,6 +111,11 @@ const Home = () => {
 
 
 
+            <section className='section relative '>
+                <div className='container'>
+                    
+                </div>
+            </section>
 
         </main>
     </div>

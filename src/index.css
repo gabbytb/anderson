@@ -23,10 +23,9 @@
     }
 
     .container {
-      max-width: 1200px;
-      width: 100%;
-      padding-right: 15px;
-      padding-left: 15px;
+      max-width: 1200px !important;
+      padding-right: 30px;
+      padding-left: 30px;
       margin-right: auto;
       margin-left: auto;
     }
@@ -193,7 +192,7 @@
       left: 32%;
     }
 
-    
+
 
 }
 
