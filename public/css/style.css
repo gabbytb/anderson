@@ -811,6 +811,10 @@ h3 {
   display: flex;
 }
 
+.h-14 {
+  height: 3.5rem;
+}
+
 .h-24 {
   height: 6rem;
 }
@@ -823,8 +827,12 @@ h3 {
   min-height: 100%;
 }
 
-.w-24 {
-  width: 6rem;
+.w-165 {
+  width: 65rem;
+}
+
+.w-28 {
+  width: 7rem;
 }
 
 .w-full {
@@ -969,16 +977,12 @@ h3 {
   line-height: 1.75rem;
 }
 
-.font-normal {
-  font-weight: 400;
+.font-light {
+  font-weight: 300;
 }
 
 .font-semibold {
   font-weight: 600;
-}
-
-.font-light {
-  font-weight: 300;
 }
 
 .capitalize {
