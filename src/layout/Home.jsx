@@ -21,7 +21,7 @@ const Home = () => {
 
 
   return (
-    <div className=''>
+    <div id='homeId' className=''>
         <nav className="flex items-center">      
             <ul className='border-r h-24 w-full flex justify-around border text-lg font-semibold text-red-500 flex-row items-center z-50 bg-white'>
                 <li className='h-full flex justify-center items-center border-r hover:bg-white ease-in duration-300 w-165'><img className='w-28 h-14' src={brandLogo} alt="" /></li>
